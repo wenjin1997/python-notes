@@ -50,3 +50,36 @@ for c in s:
 放弃自己思考了。
 * 此代码展现了列表的优势，后面用到了for循环。
 * eval()函数可以去除最外面的双引号，非常有用！不过eval()函数的缺点也很明显，eval is evil!!!会导致SQL注入等漏洞！！！
+
+## Hello World的条件输出
+### 描述
+获得用户输入的一个整数，参考该整数值，打印输出"Hello World"，要求：‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬  
+如果输入值是0，直接输出"Hello World"‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‫‬  
+如果输入值大于0，以两个字符一行方式输出"Hello World"（空格也是字符）‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪  
+如果输入值小于0，以垂直方式输出"Hello World"
+### 代码
+我的代码
+```
+if __name__ == "__main__":
+    s = "Hello World"
+    n = int(input())
+    if n == 0:
+        print("Hello World")
+    elif n > 0:
+        for i in [0,2,4,6,8,10]:
+            print(s[int(i):int(i+2)])
+    else:
+        for i in range(11):
+            print(s[int(i)])
+```
+参考答案代码
+```
+n = eval(input())
+if n == 0:
+    print("Hello World")
+elif n > 0:
+    print("He\nll\no \nWo\nrl\nd")
+else:
+    for c in "Hello World":
+        print(c)
+```
