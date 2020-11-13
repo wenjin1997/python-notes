@@ -84,3 +84,5 @@ else:
     for c in "Hello World":
         print(c)
 ```
+### Remark
+* 在第一遍提交代码时未通过，显示没有```return 0```，需要加上```if __name__ == "__main__":```。
