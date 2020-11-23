@@ -14,3 +14,8 @@ class for not with None
 continue from or yield async  
 def if pass del await 
 ## 2.1 深入理解Python语言
+* 计算机系统结构时代到人工智能时代的演进路线
+* 五种编程语言的初心和历史使命
+* Python语言的通用性、简洁性和生态性
+* Python是以计算生态为标志的“超级语言”
+## 2.2 实例2 Python蟒蛇绘制
